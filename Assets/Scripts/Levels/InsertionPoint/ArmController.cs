@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 namespace P209
 {
 	[DisallowMultipleComponent]
@@ -65,6 +65,7 @@ namespace P209
 					break;
 				case { arm: true or false, vein: true }:
 					Debug.Log("YAY!!");
+					UnityEngine.SceneManagement.SceneManager.LoadScene("TestScene");
 					break;
 			}
 		}
